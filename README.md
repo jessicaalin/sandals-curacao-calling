@@ -1,4 +1,4 @@
-## Sandals Winter Sale Landing Page Project
+## Sandals Curaçao Calling Landing Page Project
 
 ### Instructions
 
@@ -6,5 +6,4 @@
 * It must be responsive
 * It must be fast loading
 * Use all standard code
-* Pure javascript not react components# sandals-curacao-calling
-# sandals-curacao-calling
+* Pure javascript not react components

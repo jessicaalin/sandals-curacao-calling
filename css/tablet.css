@@ -1,0 +1,419 @@
+/* TABLET */
+
+--root {
+    --gray: #A7A7A7;
+    --sky-blue: #00B8F4;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .navbar {
+        margin: 2rem 2.5rem 0;
+    }
+
+    .nav-logo {
+        justify-content: flex-end;
+
+        .sandals-logo-image {
+            width: auto;
+            height: 3.12rem;
+        }
+
+        .sandals-logo-text-mobile {
+            display: none;
+        }
+
+        .sandals-logo-text {
+            display: block;
+            font-size: .58rem;
+        }
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        margin-right: 1.4rem;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        & ul {
+            display: flex;
+            margin-right: 0;
+        }
+
+        & a {
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .utils {
+            margin-top: .4rem;
+            font-size: .9rem;
+
+            & li {
+                margin-left: 1.4rem;
+                display: flex;
+
+                & img {
+                    align-self: center;
+                    margin-right: .5rem;
+                }
+            }
+        }
+
+        .categories {
+            font-size: 1rem;
+            font-weight: 700;
+
+            & li {
+                margin-left: 2.2rem;
+            }
+        }
+    }
+
+    .check-button {
+        margin-right: 0;
+        font-size: 1.45rem;
+        padding: .9rem 1.3rem;
+        background-color: rgba(255, 255, 255, 0.1);
+
+        span {
+            font-size: 1.15rem;
+        }
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .hero:after {
+        height: 14.2rem;
+    }
+
+    .hero-image {
+        height: 50rem;
+    }
+
+    .offers {
+        .circle {
+            margin: 1rem 1rem;
+        }
+
+        .credits {
+            & p:nth-of-type(1) {
+                font-size: 2rem;
+            }
+
+            & span {
+                font-size: 5rem;
+
+                & sup {
+                    font-size: 2.6rem;
+                }
+            }
+
+            .plus-container {
+                margin-bottom: 3.5rem;
+
+                & p {
+                    font-size: 2.4rem;
+                    margin: 0 1rem 0;
+                }
+
+                .line {
+                    display: block;
+                    width: 30.7rem;
+                    height: .05rem;
+                    background-color: var(--gray);
+                }
+            }
+
+            .text-cards {
+                flex-direction: row;
+                margin-bottom: 4rem;
+            }
+
+            .text-card {
+                width: 31.452rem;
+                height: 11rem;
+
+                & p:nth-of-type(1) {
+                    font-size: 4rem;
+                }
+
+                & p:nth-of-type(2) {
+                    font-size: 2rem;
+                }
+            }
+
+            & .text-card.bg-blue {
+                margin-bottom: 0;
+            }
+        }
+
+        .promotions {
+            text-align: center;
+
+            & p {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+
+            & ul {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 2.5rem;
+            }
+
+            & li {
+                margin: 0;
+            }
+
+            & li:first-child {
+                margin-top: 0;
+            }
+
+            & li:last-child {
+                margin-bottom: 0;
+            }
+
+            .line {
+                width: .05rem;
+                height: 5.4rem;
+                margin: 0 2.4rem;
+                background-color: var(--gray);
+            }
+        }
+
+        .book-button {
+            width: 35.8rem;
+            height: 5.2rem;
+            margin: 0 auto;
+        }
+
+    }
+
+    .resorts {
+        margin: 0 4rem 5rem;
+        position: relative;
+
+        .card {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        .card img {
+            width: 21rem;
+            height: 33.4rem;
+        }
+
+        .card>div {
+            height: 33.4rem;
+            margin: 0;
+            padding: 3rem 3rem 0;
+        }
+
+        .ribbon {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 10rem;
+            height: 10rem;
+            overflow: hidden;
+        }
+
+        .ribbon::before,
+        .ribbon::after {
+            position: absolute;
+            z-index: -1;
+            content: '';
+            display: block;
+        }
+
+        .ribbon span {
+            position: absolute;
+            display: block;
+            width: 22rem;
+            padding: .8rem 0;
+            font-size: 1rem;
+            background-color: #00B8F4;
+            left: -3.5rem;
+            top: 1rem;
+            transform: rotate(45deg);
+            text-align: center;
+        }
+
+        .ribbon::before,
+        .ribbon::after {
+            border-top-color: transparent;
+            border-right-color: transparent;
+        }
+
+        .ribbon::before {
+            top: 0;
+            left: 0;
+        }
+
+        .ribbon::after {
+            bottom: 0;
+            right: 0;
+        }
+
+        .dates {
+            margin-bottom: 2.5rem;
+        }
+
+        .buttons {
+            justify-content: flex-start;
+        }
+
+        .button-offer img {
+            width: .7rem;
+            height: auto;
+            margin-left: .5rem;
+        }
+
+        .button-rooms {
+            width: 17rem;
+            margin-left: 1rem;
+        }
+
+        .card>div>p:last-child {
+            text-align: left;
+            margin-left: 20rem;
+        }
+    }
+
+    .register {
+        &>p:nth-of-type(3) {
+            width: 42.7rem;
+        }
+
+        .banner {
+            width: 100vw;
+            height: 46rem;
+        }
+
+    }
+
+    footer {
+        .line {
+            max-width: 716rem;
+        }
+
+        .tools {
+            margin-bottom: 0;
+            font-size: 1.2rem;
+
+            .line {
+                display: block;
+            }
+
+            & a:not(.us-websites) {
+                display: flex;
+            }
+
+            &>a {
+                display: flex;
+                flex-direction: row;
+                padding: 4rem 1rem;
+
+                & img {
+                    margin-right: 1.5rem;
+                    width: 2.7rem;
+                    height: auto;
+                    display: block;
+                }
+
+                .sandals {
+                    width: 4.8rem;
+                    height: auto;
+                }
+
+                .globe {
+                    width: 2.1rem;
+                    height: auto;
+                }
+
+                .chevron {
+                    width: 1.35rem;
+                    height: auto;
+                    margin-left: 2rem;
+                    align-self: center;
+                }
+            }
+
+            .line {
+                width: .05rem;
+                height: 3rem;
+                margin: 4rem 3rem;
+                background-color: var(--light-gray);
+            }
+
+
+        }
+
+        .contest {
+            margin-bottom: 5rem;
+
+            & div {
+                margin-bottom: 3.5rem;
+
+                & img {
+                    width: 17.867rem;
+                    height: 100%;
+                    object-fit: cover;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            & p {
+                font-size: .8rem;
+            }
+
+            & a {
+                font-size: 1.8rem;
+            }
+        }
+
+        .links {
+            flex-direction: row;
+            margin-bottom: 3rem;
+
+            & a {
+                margin: 0 1.5rem;
+
+                & img {
+                    margin-left: .5rem;
+                }
+            }
+        }
+
+        .info {
+            margin-top: -1rem;
+            
+            & div {
+                flex-direction: row;
+            }
+
+            & a {
+                flex-direction: row;
+                align-items: center;
+                margin: 0 1.3rem;
+            }
+        }
+
+        .group>div {
+            flex-direction: row;
+        }
+    }
+
+    main {
+        overflow-x: hidden;
+    }
+}
