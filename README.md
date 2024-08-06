@@ -1,9 +1,4 @@
-## Sandals Curaçao Calling Landing Page Project
+## Sandals Curaçao Calling Landing Page
 
-### Instructions
-
-* Encode this in html5
-* It must be responsive
-* It must be fast loading
-* Use all standard code
-* Pure javascript not react components
+### Check it out
+http://jessicaalin.com/sandals-curacao-calling/
